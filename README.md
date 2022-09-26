@@ -1,0 +1,2 @@
+# SimaforicAlphaberSim
+Simaforic alphabet simulator
