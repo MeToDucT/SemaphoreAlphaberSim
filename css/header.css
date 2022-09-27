@@ -1,0 +1,11 @@
+﻿.header-text {
+	color:aliceblue;
+	transition: all 0.2s ease-in-out;
+}
+
+.header-text :hover {
+	background: 0 0;
+	border: 0;
+	border-radius: var(--bs-nav-pills-border-radius);
+	background-color: hsla(0, 0%, 100%, .05);
+}
