@@ -35,19 +35,20 @@ body {
   display: flex;
 }
 .default_container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
   padding: 1rem;
   margin: 1rem;
 }
-.button_container {
-  width: 200px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.video_container {
+.canvas_container {
   width: 1280px;
   height: 720px;
-  background-color: gray;
+  background-color: royalblue;
   border-radius: 10px;
+}
+.hidden_element {
+  display: none;
 }
 .button_text {
   font-family: 'Roboto Condensed' sans-serif;
@@ -67,8 +68,4 @@ body {
 .default_button:hover {
   transition: all 0.2s ease-in-out;
   background-color: blue;
-}
-.logo {
-  max-width: 2rem;
-  max-height: 2rem;
 }

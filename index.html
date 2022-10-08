@@ -29,21 +29,28 @@
 
         <div class="main_container">
 
-            <div class="default_container button_container">
-                <button class="button_text default_button" id="button">Button</button>
-                <button class="button_text default_button" id="button">Button</button>
-                <button class="button_text default_button" id="button">Button</button>
-                <button class="button_text default_button" id="button">Button</button>
-                <button class="button_text default_button" id="button">Button</button>
+            <div class="default_container" id="controls_container">
+
+                <!--TODO add controls-->
+                <div class="hidden_element" id="landmark_container"></div>  <!--hidden-->
+
             </div>
 
-            <video class="default_container video_container" id="video_container"></video>
+            <video class="hidden_element" id="video_container"></video>     <!--hidden-->
+            <canvas class="default_container canvas_container" id="canvas_container"></canvas>
             
         </div>
 
     </body>
 
-    <script src="js/videoCapture.js"></script>
-    <!-- <script scr="js/buttonHandlers.js"></script> -->
+    <!--MediaPipe scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils_3d/control_utils_3d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js" crossorigin="anonymous"></script>
+
+    <!--Our scripts-->
+    <script src="js/bodyTracking.js"></script>
 
 </html>
