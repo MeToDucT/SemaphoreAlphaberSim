@@ -1,30 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-    <head lang="en">
-
-        <script src="coi-serviceworker.min.js"></script>
+    <head>
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Simaforic Alphabet Simulator</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="css/style.css" />
-        <!-- <link rel="shortcut icon" href="img/icon.png" type="image/png" /> -->
+        <link rel="stylesheet" href="css/_style.css">
+
+        <title>SAS.dev</title>
 
     </head>
 
-    <body style="background-color: gray">
+    <body>
 
-        <div class="container">
+        <header class="header">
+            <div class="header_division_container">
 
-            <header class="py-3 row">
+                <h1>Simaforic Alphabet Simulator</h1>
+                <h2>SAS.dev</h2>
 
-            </header>
+            </div>
+        </header>
 
+        <div class="main_container">
+
+            <div class="default_container button_container">
+                <button class="button_text default_button" id="button">Button</button>
+                <button class="button_text default_button" id="button">Button</button>
+                <button class="button_text default_button" id="button">Button</button>
+                <button class="button_text default_button" id="button">Button</button>
+                <button class="button_text default_button" id="button">Button</button>
+            </div>
+
+            <video class="default_container video_container" id="video_container"></video>
+            
         </div>
 
     </body>
+
+    <script src="js/videoCapture.js"></script>
+    <!-- <script scr="js/buttonHandlers.js"></script> -->
 
 </html>

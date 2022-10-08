@@ -1,0 +1,32 @@
+//out: "_style.css", compress: false
+
+html {
+    font-size: 15px;    //1rem size determination
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1rem;
+    color: royalblue;
+    background-color: aliceblue;
+
+    width:100%;
+    max-width: 1600px;      //real width: 1230px - 2rem (paddings)
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+}
+
+*,
+*:before,
+*,:after {
+    box-sizing: border-box;
+}
+
+/* Containers definitions */
+
+@import "header.less";
+@import "main.less";
+@import "button.less";
+@import "logo.less";
