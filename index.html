@@ -6,8 +6,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="css/_style.css">
@@ -21,23 +19,32 @@
         <header class="header">
             <div class="header_division_container">
 
-                <h1>Simaforic Alphabet Simulator</h1>
+                <h1>Semaphore Alphabet Simulator</h1>
                 <h2>SAS.dev</h2>
 
             </div>
         </header>
 
-        <div class="main_container">
+        <div class="default_container">
 
-            <div class="default_container" id="controls_container">
+            <div class="left_side_container" id="controls_container">
 
-                <!--TODO add controls-->
-                <div class="hidden_element" id="landmark_container"></div>  <!--hidden-->
+                <canvas class="left_side_container letter_container" id="letter_container"></canvas>    <!--Letter user to show-->
+                
+                <div class="left_side_container" id="contols_container">
+
+                    <center><button class="button_text default_button swich_button" id="selfie_mode_switch">selfie mode</button></center>
+                    <center><button class="button_text default_button swich_button" id="segmentation_switch">segmentation</button></center>
+                    <!--source chouser-->
+
+                </div>
+                
+                <center><div class="default_container" id="landmark_container"></div></center>
 
             </div>
 
             <video class="hidden_element" id="video_container"></video>     <!--hidden-->
-            <canvas class="default_container canvas_container" id="canvas_container"></canvas>
+            <canvas class="output_container" id="output_container"></canvas>
             
         </div>
 
@@ -51,6 +58,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js" crossorigin="anonymous"></script>
 
     <!--Our scripts-->
+    <script src="js/vars.js"></script>
     <script src="js/bodyTracking.js"></script>
+    <script src="js/buttonHandlers.js"></script>
 
 </html>
