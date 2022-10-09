@@ -1,2 +1,2 @@
-# SimaforicAlphaberSim
-Simaforic alphabet simulator
+# SemaphorecAlphaberSim
+Semaphore alphabet simulator
